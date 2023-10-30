@@ -1,7 +1,9 @@
 # LwM2M to TypeBox
+
 > Generate typebox types given an XML definition of an LwM2M object
 
 ## Expected Input
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <LWM2M
@@ -109,5 +111,42 @@
 ```
 
 ## Expected output
-```
+
+```ts
+export const Geolocation = Type.Object({
+  Latitude: Type.Integer({
+    description:
+      "The decimal notation of latitude, e.g. -43.5723 [World Geodetic System 1984].",
+  }),
+  Longitude: Type.Integer({
+    description:
+      "The decimal notation of longitude, e.g. 153.21760 [World Geodetic System 1984].",
+  }),
+  Altitude: Type.Optional(
+    Type.Integer({
+      description:
+        "The decimal notation of altitude in meters above sea level.",
+    })
+  ),
+  Radius: Type.Optional(
+    Type.Integer({
+      description:
+        "The value in this resource indicates the radius of a circular area in meters. The circular area is used to describe uncertainty about a point for coordinates in a two-dimensional coordinate reference systems (CRS). The center point of a circular area is specified by using the Latitude and the Longitude Resources.",
+    })
+  ),
+  Speed: Type.Optional(
+    Type.Integer({
+      description: "Speed is the time rate of change in position.",
+    })
+  ),
+  Heading: Type.Optional(
+    Type.Integer({
+      description: "The angle of movement.",
+    })
+  ),
+  Timestamp: Type.Integer({
+    description:
+      "The timestamp of when the location measurement was performed.",
+  }),
+});
 ```
