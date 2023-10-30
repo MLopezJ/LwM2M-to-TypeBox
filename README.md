@@ -1,6 +1,9 @@
-# LwM2M to TypeBox
+# Converter: from LwM2M to TypeBox
 
-> Generate typebox types given an XML definition of an LwM2M object
+## About
+Generate typebox types given an XML definition of an LwM2M object.
+
+This converter will be used as part of the effort to visualice arbitrary device data on [hello.nrfcloud.com/map](https://github.com/hello-nrfcloud/proto)
 
 ## Expected Input
 
