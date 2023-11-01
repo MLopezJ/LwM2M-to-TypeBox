@@ -1,6 +1,6 @@
-import ts from 'typescript'
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
+import { typeGenerator } from './typeGenerator.js'
 
 void describe('typeGenerator', () => {
 	void it(`should return the type tree definition given the id of a LwM2M object defined in a XML format`, () => {
@@ -445,10 +445,3 @@ void describe('typeGenerator', () => {
 		assert.deepEqual(result, expected)
 	})
 })
-
-/**
- *
- */
-const typeGenerator = (objectId: string): ts.Node => {
-	return {} as ts.Node
-}
