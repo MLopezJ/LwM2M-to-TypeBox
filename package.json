@@ -1,0 +1,53 @@
+{
+  "name": "lwm2m-to-typebox",
+  "version": "1.0.0",
+  "description": "Generate typebox types given an XML definition of an LwM2M object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "find ./ -type f -name '*.spec.ts' -not -path './node_modules/*' -print | xargs npx tsx --no-warnings --test",
+    "prepare": "husky install",
+    "prepublish": "npx swc -d dist ./src"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLopezJ/LwM2M-to-TypeBox.git"
+  },
+  "keywords": [
+    "LwM2M",
+    "typebox"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MLopezJ/LwM2M-to-TypeBox/issues"
+  },
+  "homepage": "https://github.com/MLopezJ/LwM2M-to-TypeBox#readme",
+  "prettier": "@nordicsemiconductor/asset-tracker-cloud-code-style/.prettierrc",
+  "lint-staged": {
+    "*.{md,json,yaml,yml}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --ext .js,.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
+  "devDependencies": {
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "12.0.68",
+    "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "16.0.11",
+    "@swc/cli": "0.1.62",
+    "@types/node": "20.5.0",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "husky": "8.0.3",
+    "prettier": "3.0.1",
+    "semantic-release": "21.1.1",
+    "tsx": "3.12.7",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {}
+}
