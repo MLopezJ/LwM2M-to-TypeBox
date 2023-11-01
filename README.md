@@ -116,40 +116,442 @@ This converter will be used as part of the effort to visualice arbitrary device 
 ## Expected output
 
 ```ts
-export const Geolocation = Type.Object({
-  Latitude: Type.Integer({
-    description:
-      "The decimal notation of latitude, e.g. -43.5723 [World Geodetic System 1984].",
-  }),
-  Longitude: Type.Integer({
-    description:
-      "The decimal notation of longitude, e.g. 153.21760 [World Geodetic System 1984].",
-  }),
-  Altitude: Type.Optional(
-    Type.Integer({
-      description:
-        "The decimal notation of altitude in meters above sea level.",
-    })
-  ),
-  Radius: Type.Optional(
-    Type.Integer({
-      description:
-        "The value in this resource indicates the radius of a circular area in meters. The circular area is used to describe uncertainty about a point for coordinates in a two-dimensional coordinate reference systems (CRS). The center point of a circular area is specified by using the Latitude and the Longitude Resources.",
-    })
-  ),
-  Speed: Type.Optional(
-    Type.Integer({
-      description: "Speed is the time rate of change in position.",
-    })
-  ),
-  Heading: Type.Optional(
-    Type.Integer({
-      description: "The angle of movement.",
-    })
-  ),
-  Timestamp: Type.Integer({
-    description:
-      "The timestamp of when the location measurement was performed.",
-  }),
-});
+NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: [
+    TokenObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 95
+    },
+    pos: -1,
+    end: -1,
+    hasTrailingComma: false,
+    transformFlags: 0
+  ],
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Geolocation_14201',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'Readonly',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: [
+      [NodeObject],
+      pos: -1,
+      end: -1,
+      hasTrailingComma: false,
+      transformFlags: 1
+    ]
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Latitude_0',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Longitude_1',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Timestamp_9',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Altitude_2',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Radius_3',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Speed_4',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+} NodeObject {
+  pos: -1,
+  end: -1,
+  flags: 16,
+  modifierFlagsCache: 0,
+  transformFlags: 1,
+  parent: undefined,
+  kind: 265,
+  symbol: undefined,
+  localSymbol: undefined,
+  modifiers: undefined,
+  name: IdentifierObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 0,
+    parent: undefined,
+    kind: 80,
+    escapedText: 'Heading_5',
+    jsDoc: undefined,
+    flowNode: undefined,
+    symbol: undefined
+  },
+  typeParameters: undefined,
+  type: NodeObject {
+    pos: -1,
+    end: -1,
+    flags: 16,
+    modifierFlagsCache: 0,
+    transformFlags: 1,
+    parent: undefined,
+    kind: 183,
+    typeName: IdentifierObject {
+      pos: -1,
+      end: -1,
+      flags: 16,
+      modifierFlagsCache: 0,
+      transformFlags: 0,
+      parent: undefined,
+      kind: 80,
+      escapedText: 'number',
+      jsDoc: undefined,
+      flowNode: undefined,
+      symbol: undefined
+    },
+    typeArguments: undefined
+  },
+  jsDoc: undefined,
+  locals: undefined,
+  nextContainer: undefined,
+  emitNode: { leadingComments: [ [Object] ] }
+}
+
 ```
